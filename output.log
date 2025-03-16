@@ -1,0 +1,15 @@
+   Compiling dungeon_crawler v0.1.0 (C:\Users\clayg\OneDrive\Desktop\rust-dungeon\dungeon_crawler)
+error[E0425]: cannot find value `®ions` in this scope
+  --> src\rooms.rs:87:34
+   |
+87 |         ensure_clear_paths(grid, ®ions); // Fixed: Use 'regions' and pass as reference
+   |                                  ^^^^^ not found in this scope
+
+error: identifiers cannot contain emoji: `®ions`
+  --> src\rooms.rs:87:34
+   |
+87 |         ensure_clear_paths(grid, ®ions); // Fixed: Use 'regions' and pass as reference
+   |                                  ^^^^^
+
+For more information about this error, try `rustc --explain E0425`.
+error: could not compile `dungeon_crawler` (bin "dungeon_crawler") due to 2 previous errors
